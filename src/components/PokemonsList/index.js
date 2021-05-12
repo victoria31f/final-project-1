@@ -1,3 +1,3 @@
-import PokemonsList from './PokemonList';
+import PokemonsListView from './PokemonListView';
 
-export default PokemonsList;
+export default PokemonsListView;

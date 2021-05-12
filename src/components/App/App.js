@@ -5,9 +5,10 @@ import {
 } from "react-router-dom";
 
 import Menu from "../Menu";
-import PokemonsList from '../PokemonsList';
+import CaughtPokemonsPage from '../CaughtPokemonsPage';
 import React from 'react';
-import PokemonPage from '../PokemonPage/PokemonPage';
+import PokemonPage from '../PokemonPage';
+import AllPokemonsPage from '../AllPokemonsPage';
 
 const App = () => {
 
@@ -16,9 +17,9 @@ const App = () => {
             <Menu />
             <div className="container-lg bg-light content py-5">
                 <Switch>
-                    <Route exact path='/' component={PokemonsList} />
+                    <Route exact path='/' component={AllPokemonsPage} />
                     <Route path='/pokemons/:id' component={PokemonPage} />
-                    <Route path='/pokemons-caught' component={PokemonsList}/>
+                    <Route path='/pokemons-caught' component={CaughtPokemonsPage}/>
                 </Switch>
             </div>
         </div>

@@ -10,15 +10,21 @@
     },
     {
       "name": "venusaur",
-      "id": 3
+      "id": 3,
+      "caught": true,
+      "date": 1620848650302
     },
     {
       "name": "charmander",
-      "id": 4
+      "id": 4,
+      "caught": true,
+      "date": 1620848755376
     },
     {
       "name": "charmeleon",
-      "id": 5
+      "id": 5,
+      "caught": true,
+      "date": 1620849609543
     },
     {
       "name": "charizard",
@@ -46,7 +52,9 @@
     },
     {
       "name": "butterfree",
-      "id": 12
+      "id": 12,
+      "caught": true,
+      "date": 1620849571943
     },
     {
       "name": "weedle",

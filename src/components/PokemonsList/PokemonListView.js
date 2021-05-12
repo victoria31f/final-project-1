@@ -1,7 +1,7 @@
 import './PokemonsList.css';
 import React from 'react';
 
-import Pokemon from '../Pokemon';
+import PokemonCard from '../PokemonCard';
 import Spinner from '../Spinner';
 
 const PokemonListView = ({   status, pokemonsList, pokemonsListError,
@@ -14,7 +14,7 @@ const PokemonListView = ({   status, pokemonsList, pokemonsListError,
     const pokemons = <div className="list mx-5">
             { pokemonsList.map((item, idx) => {
                 const { name, caught, id } = item;
-                return <Pokemon name={name}
+                return <PokemonCard name={name}
                                 caught={caught ? caught : false}
                                 id={id}
                                 key={idx} />;
