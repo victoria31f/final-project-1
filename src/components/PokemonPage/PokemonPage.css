@@ -1,0 +1,9 @@
+.pokemon-card {
+    max-width: 65%;
+    margin: 4rem auto;
+}
+
+.pokemon-img {
+    width: 100%;
+    height: auto;
+}

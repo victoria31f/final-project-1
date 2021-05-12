@@ -1,0 +1,22 @@
+.list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.button {
+    margin: 2rem auto;
+    display: block;
+    width: 200px;
+    background-color: #395EA9;
+    border-color: #395EA9;
+}
+
+.button:hover {
+    background-color: #496aac;
+}
+
+.spinner-inline {
+    border-width: 3px;
+}
