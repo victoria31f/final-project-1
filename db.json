@@ -6,7 +6,9 @@
     },
     {
       "name": "ivysaur",
-      "id": 2
+      "id": 2,
+      "caught": true,
+      "date": 1621075828679
     },
     {
       "name": "venusaur",
