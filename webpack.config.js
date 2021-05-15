@@ -5,6 +5,7 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.join(__dirname, 'public'),
+        publicPath: '/',
     },
     module: {
         rules: [
@@ -39,5 +40,6 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'public'),
         port: 3000,
+        historyApiFallback: true,
     },
 }
