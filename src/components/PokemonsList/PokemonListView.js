@@ -11,7 +11,7 @@ const PokemonListView = ({   status, pokemonsList, pokemonsListError,
         <span className="visually-hidden">Loading...</span>
     </div>;
 
-    const pokemons = <div className="list mx-5">
+    let pokemons = <div className="list mx-5">
             { pokemonsList.map((item, idx) => {
                 const { name, caught, id } = item;
                 return <PokemonCard name={name}
@@ -20,6 +20,12 @@ const PokemonListView = ({   status, pokemonsList, pokemonsListError,
                                 key={idx} />;
             })}
         </div>;
+
+    const warning = <p>Catch your first pokemon</p>
+
+    if(pokemonsList.length === 0) {
+        pokemons = warning;
+    }
 
     return (
         <div>

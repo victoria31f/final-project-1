@@ -3,7 +3,7 @@ const PokemonPageView = ({ id, name, caught, date}) => {
         <div className="card mb-3 pokemon-card">
             <div className="row g-0">
                 <div className="col-md-6">
-                    <img src={`${process.env.PUBLIC_URL}/img/${id}.png`} alt={name} className="pokemon-img" />
+                    <img src={`../img/${id}.png`} alt={name} className="pokemon-img" />
                 </div>
                 <div className="col-md-6">
                     <div className="card-body text-end">

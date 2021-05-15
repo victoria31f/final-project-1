@@ -21,7 +21,7 @@ class Api {
 
     getPokemon = async (id, options) => {
         const res = await this._getResource(`/pokemons/${id}`, options);
-        return await { ...res, date: new Date(res.date).toLocaleDateString() };
+        return { ...res, date: new Date(res.date).toLocaleDateString() };
     };
 
     editPokemon = async (data) => {
