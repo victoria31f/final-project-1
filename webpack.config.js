@@ -15,14 +15,27 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.(png|jpg|)$/,
-                loader: 'file-loader'
+                test: /\.(png|jpg|gif|ico|svg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: 'img',
+                            publicPath: 'img'
+                        },
+                    },
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {}
+                    },
+                ]
             },
         ]
     },
+    devtool: 'source-map',
     devServer: {
         contentBase: path.join(__dirname, 'public'),
         port: 3000,

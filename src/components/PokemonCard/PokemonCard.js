@@ -16,7 +16,7 @@ const PokemonCard = ({ name, caught, id }) => {
     return (
         <div className="card">
             <Link to={`/pokemons/${id}`}>
-                <img src={`./img/${id}.png`} className="card-img-top" alt="" />
+                <img src={`/img/${id}.png`} className="card-img-top" alt="" />
             </Link>
             <div className="card-body p-0 d-flex justify-content-center flex-column">
                 <h5 className="card-title text-center">{capitalize(name)}</h5>
