@@ -8,7 +8,8 @@
     {
       "name": "ivysaur",
       "id": 2,
-      "caught": false
+      "caught": true,
+      "date": 1621179229108
     },
     {
       "name": "venusaur",

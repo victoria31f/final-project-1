@@ -1,7 +1,7 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 
-module.exports = {
+const config = {
   entry: './src/index.js',
   output: {
     filename: 'main.js',
@@ -56,4 +56,11 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+};
+
+module.exports = (env, argv) => {
+  if (argv.mode === 'production') {
+    config.output.publicPath = '/final-project-1/';
+  }
+  return config;
 };
