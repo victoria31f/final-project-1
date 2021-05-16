@@ -1,9 +1,30 @@
 .pokemon-card {
     max-width: 65%;
-    margin: 4rem auto;
+    margin: 3rem auto;
 }
 
 .pokemon-img {
     width: 100%;
     height: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .pokemon-card {
+        max-width: 75%;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pokemon-card {
+        max-width: 75%;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .pokemon-card {
+        max-width: 80%;
+        margin: 2rem auto;
+    }
 }

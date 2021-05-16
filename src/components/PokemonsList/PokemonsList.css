@@ -20,3 +20,27 @@
 .spinner-inline {
     border-width: 3px;
 }
+
+@media screen and (max-width: 1200px) {
+    .list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
