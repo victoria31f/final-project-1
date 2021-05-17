@@ -11,6 +11,8 @@ const initialState = {
   startPoint: 0,
   limit: 15,
   buttonLoadVisible: true,
+  buttonCaughtLoadVisible: true,
+  startPointCaught: 0,
 };
 
 export const fetchPokemons = createAsyncThunk(
@@ -20,11 +22,17 @@ export const fetchPokemons = createAsyncThunk(
 
 export const fetchCaughtPokemons = createAsyncThunk(
   'pokemonsList/fetchCaughtPokemons',
-  () => apiService.getCaughtPokemons(),
+  // eslint-disable-next-line max-len
+  (data, thunkAPI) => apiService.getCaughtPokemons(data, thunkAPI.getState().pokemonsList.startPointCaught),
 );
 
 export const editPokemon = createAsyncThunk(
   'pokemonsList/editPokemon',
+  (data) => apiService.editPokemon(data),
+);
+
+export const letPokemonGo = createAsyncThunk(
+  'pokemonsList/letPokemonGo',
   (data) => apiService.editPokemon(data),
 );
 
@@ -63,15 +71,36 @@ export const pokemonsListSlice = createSlice({
         if (pokemon.caught) {
           state.pokemonsCaught.push(pokemon);
         }
-        if (!pokemon.caught) {
-          const pokemonCaughtIdx = state.pokemonsCaught.findIndex((el) => el.id === id);
-          state.pokemonsCaught.splice(pokemonCaughtIdx, 1);
+      }
+    },
+    [letPokemonGo.fulfilled]: (state, action) => {
+      const { id, caught } = action.payload;
+      let index;
+      const pokemonCaught = state.pokemonsCaught.find((el, idx) => {
+        index = idx;
+        return el.id === id;
+      });
+      const pokemon = state.pokemons.find((el) => el.id === id);
+      if (pokemonCaught) {
+        pokemonCaught.caught = caught;
+        if (!pokemonCaught.caught) {
+          state.pokemonsCaught.splice(index, 1);
+          if (pokemon) {
+            pokemon.caught = caught;
+          }
         }
       }
     },
     [fetchCaughtPokemons.fulfilled]: (state, action) => {
       state.statusCaught = 'succeeded';
-      state.pokemonsCaught = [...action.payload];
+      // state.pokemonsCaught = [...action.payload];
+      if (action.payload.length > 0) {
+        state.pokemonsCaught.push(...action.payload);
+        state.startPointCaught += state.limit;
+        if (action.payload.length < 15) {
+          state.buttonCaughtLoadVisible = false;
+        }
+      }
     },
   },
 });

@@ -15,8 +15,8 @@ class Api {
         return await this._getResource(`/pokemons?_start=${start}&_limit=${limit}`);
     };
 
-    getCaughtPokemons = async () => {
-        return await this._getResource(`/pokemons?caught=true&_sort=date&_order=asc`);
+    getCaughtPokemons = async (data, start) => {
+        return await this._getResource(`/pokemons?caught=true&_sort=date&_order=asc&_start=${start}&_limit=15`);
     };
 
     getPokemon = async (id, options) => {

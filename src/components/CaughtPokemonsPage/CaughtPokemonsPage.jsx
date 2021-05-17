@@ -13,9 +13,9 @@ const CaughtPokemonsPage = ({ match }) => {
   const pokemonsStatus = useSelector((state) => state.pokemonsList.statusCaught);
 
   const pokemonsListError = useSelector((state) => state.pokemonsList.error);
-  const buttonLoadVisible = useSelector((state) => state.pokemonsList.buttonLoadVisible);
+  const buttonLoadVisible = useSelector((state) => state.pokemonsList.buttonCaughtLoadVisible);
 
-  const startPoint = useSelector((state) => state.pokemonsList.startPoint);
+  const startPoint = useSelector((state) => state.pokemonsList.startPointCaught);
 
   useEffect(() => {
     if (pokemonsStatus === 'idle') {

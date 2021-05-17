@@ -3,92 +3,92 @@
     {
       "name": "bulbasaur",
       "id": 1,
-      "caught": true,
-      "date": 1621241845073
+      "caught": false,
+      "date": 1621246371120
     },
     {
       "name": "ivysaur",
       "id": 2,
       "caught": true,
-      "date": 1621241845669
+      "date": 1621246519842
     },
     {
       "name": "venusaur",
       "id": 3,
       "caught": true,
-      "date": 1621241846468
+      "date": 1621246745964
     },
     {
       "name": "charmander",
       "id": 4,
       "caught": true,
-      "date": 1621241847539
+      "date": 1621246789917
     },
     {
       "name": "charmeleon",
       "id": 5,
-      "caught": true,
-      "date": 1621241851650
+      "caught": false,
+      "date": 1621243763763
     },
     {
       "name": "charizard",
       "id": 6,
-      "caught": true,
-      "date": 1621241850588
+      "caught": false,
+      "date": 1621246275769
     },
     {
       "name": "squirtle",
       "id": 7,
       "caught": true,
-      "date": 1621240283090
+      "date": 1621246777963
     },
     {
       "name": "wartortle",
       "id": 8,
       "caught": true,
-      "date": 1621241849514
+      "date": 1621247789101
     },
     {
       "name": "blastoise",
       "id": 9,
       "caught": true,
-      "date": 1621241853221
+      "date": 1621246618467
     },
     {
       "name": "caterpie",
       "id": 10,
       "caught": true,
-      "date": 1621241854092
+      "date": 1621246627842
     },
     {
       "name": "metapod",
       "id": 11,
       "caught": true,
-      "date": 1621241855281
+      "date": 1621246381592
     },
     {
       "name": "butterfree",
       "id": 12,
       "caught": true,
-      "date": 1621241856167
+      "date": 1621246760395
     },
     {
       "name": "weedle",
       "id": 13,
-      "caught": true,
-      "date": 1621241892566
+      "caught": false,
+      "date": 1621246369710
     },
     {
       "name": "kakuna",
       "id": 14,
-      "caught": true,
-      "date": 1621241890912
+      "caught": false,
+      "date": 1621246362200
     },
     {
       "name": "beedrill",
       "id": 15,
-      "caught": true,
-      "date": 1621241891583
+      "caught": false,
+      "date": 1621246355390
     },
     {
       "name": "pidgey",
@@ -103,19 +103,20 @@
     {
       "name": "pidgeot",
       "id": 18,
-      "caught": true,
-      "date": 1621241893656
+      "caught": false,
+      "date": 1621246234968
     },
     {
       "name": "rattata",
       "id": 19,
-      "caught": true,
-      "date": 1621241894373
+      "caught": false,
+      "date": 1621246770511
     },
     {
       "name": "raticate",
       "id": 20,
-      "caught": false
+      "caught": true,
+      "date": 1621246631356
     },
     {
       "name": "spearow",
@@ -131,19 +132,19 @@
       "name": "ekans",
       "id": 23,
       "caught": true,
-      "date": 1621241896511
+      "date": 1621246787640
     },
     {
       "name": "arbok",
       "id": 24,
-      "caught": true,
-      "date": 1621241895729
+      "caught": false,
+      "date": 1621244201178
     },
     {
       "name": "pikachu",
       "id": 25,
-      "caught": true,
-      "date": 1621241897347
+      "caught": false,
+      "date": 1621245957865
     },
     {
       "name": "raichu",
@@ -164,13 +165,13 @@
       "name": "nidoran-f",
       "id": 29,
       "caught": false,
-      "date": 1621240097205
+      "date": 1621246273334
     },
     {
       "name": "nidorina",
       "id": 30,
-      "caught": true,
-      "date": 1621241898928
+      "caught": false,
+      "date": 1621245869602
     },
     {
       "name": "nidoqueen",
@@ -230,7 +231,8 @@
     {
       "name": "golbat",
       "id": 42,
-      "caught": false
+      "caught": true,
+      "date": 1621246386791
     },
     {
       "name": "oddish",
@@ -240,7 +242,8 @@
     {
       "name": "gloom",
       "id": 44,
-      "caught": false
+      "caught": true,
+      "date": 1621246385447
     },
     {
       "name": "vileplume",
@@ -3229,8 +3232,8 @@
     {
       "name": "reshiram",
       "id": 643,
-      "caught": true,
-      "date": 1621241670772
+      "caught": false,
+      "date": 1621243785676
     },
     {
       "name": "zekrom",
@@ -4580,8 +4583,8 @@
     {
       "name": "golem-alola",
       "id": 10111,
-      "caught": true,
-      "date": 1621243168761
+      "caught": false,
+      "date": 1621246375816
     },
     {
       "name": "grimer-alola",
