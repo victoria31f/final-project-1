@@ -20,10 +20,12 @@ const PokemonCard = ({
   const button = (path === '/pokemons-caught') ? buttonLetGo : buttonCatch;
   const disabled = (path === '/pokemons-caught') ? false : caught;
 
+  const image = id > 720 ? '/img/no-image.jpg' : `/img/${id}.png`;
+
   return (
     <div className="card">
       <Link to={`/pokemons/${id}`}>
-        <img src={`/img/${id}.png`} className="card-img-top" alt="" />
+        <img src={image} className="card-img-top" alt="" />
       </Link>
       <div className="card-body p-0 d-flex justify-content-center flex-column">
         <h5 className="card-title text-center">{capitalize(name)}</h5>

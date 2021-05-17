@@ -4580,7 +4580,8 @@
     {
       "name": "golem-alola",
       "id": 10111,
-      "caught": false
+      "caught": true,
+      "date": 1621243168761
     },
     {
       "name": "grimer-alola",
