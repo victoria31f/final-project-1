@@ -11,6 +11,7 @@ const AllPokemonsPage = () => {
 
   const limit = 15;
   const startPoint = useSelector((state) => state.pokemonsList.startPoint);
+  const buttonLoadVisible = useSelector((state) => state.pokemonsList.buttonLoadVisible);
 
   useEffect(() => {
     if (pokemonsStatus === 'idle') {
@@ -38,6 +39,7 @@ const AllPokemonsPage = () => {
       pokemonsStatus={pokemonsStatus}
       loadMoreHandler={loadMoreHandler}
       pokemonsListError={pokemonsListError}
+      buttonLoadVisible={buttonLoadVisible}
     />
   );
 };

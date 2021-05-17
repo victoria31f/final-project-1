@@ -7,6 +7,7 @@ import Spinner from '../Spinner';
 const PokemonListView = ({
   status, pokemonsList, pokemonsListError,
   loadMoreHandler, pokemonsStatus, path,
+  buttonLoadVisible,
 }) => {
   const spinner = (
     <div className="spinner-border spinner-inline" role="status">
@@ -46,6 +47,7 @@ const PokemonListView = ({
         type="button"
         className="btn btn-primary btn-lg button"
         onClick={loadMoreHandler}
+        style={{ display: buttonLoadVisible ? 'block' : 'none' }}
       >
         { pokemonsStatus === 'loading' && status !== 'loading' ? spinner : 'Load more'}
       </button>

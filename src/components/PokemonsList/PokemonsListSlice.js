@@ -10,6 +10,7 @@ const initialState = {
   error: null,
   startPoint: 0,
   limit: 15,
+  buttonLoadVisible: true,
 };
 
 export const fetchPokemons = createAsyncThunk(
@@ -44,6 +45,9 @@ export const pokemonsListSlice = createSlice({
       if (action.payload.length > 0) {
         state.pokemons.push(...action.payload);
         state.startPoint += state.limit;
+        if (action.payload.length < 15) {
+          state.buttonLoadVisible = false;
+        }
       }
     },
     [fetchPokemons.rejected]: (state, action) => {

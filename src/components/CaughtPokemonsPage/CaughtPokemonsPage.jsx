@@ -13,6 +13,7 @@ const CaughtPokemonsPage = ({ match }) => {
   const pokemonsStatus = useSelector((state) => state.pokemonsList.statusCaught);
 
   const pokemonsListError = useSelector((state) => state.pokemonsList.error);
+  const buttonLoadVisible = useSelector((state) => state.pokemonsList.buttonLoadVisible);
 
   const startPoint = useSelector((state) => state.pokemonsList.startPoint);
 
@@ -43,6 +44,7 @@ const CaughtPokemonsPage = ({ match }) => {
       loadMoreHandler={loadMoreHandler}
       pokemonsListError={pokemonsListError}
       path={match.path}
+      buttonLoadVisible={buttonLoadVisible}
     />
   );
 };
