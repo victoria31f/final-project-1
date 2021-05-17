@@ -6,7 +6,7 @@ import {
 } from '../PokemonsList/PokemonsListSlice';
 import PokemonListView from '../PokemonsList';
 
-const CaughtPokemonsPage = () => {
+const CaughtPokemonsPage = ({ match }) => {
   const dispatch = useDispatch();
 
   const pokemonsList = useSelector(selectPokemonsCaught);
@@ -42,6 +42,7 @@ const CaughtPokemonsPage = () => {
       pokemonsStatus={pokemonsStatus}
       loadMoreHandler={loadMoreHandler}
       pokemonsListError={pokemonsListError}
+      path={match.path}
     />
   );
 };

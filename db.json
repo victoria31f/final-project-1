@@ -3,39 +3,44 @@
     {
       "name": "bulbasaur",
       "id": 1,
-      "caught": false
+      "caught": false,
+      "date": 1621240017314
     },
     {
       "name": "ivysaur",
       "id": 2,
-      "caught": true,
-      "date": 1621179229108
+      "caught": false,
+      "date": 1621240032987
     },
     {
       "name": "venusaur",
       "id": 3,
-      "caught": true,
-      "date": 1621082549051
+      "caught": false,
+      "date": 1621240100279
     },
     {
       "name": "charmander",
       "id": 4,
-      "caught": false
+      "caught": false,
+      "date": 1621240288400
     },
     {
       "name": "charmeleon",
       "id": 5,
-      "caught": false
+      "caught": false,
+      "date": 1621240032178
     },
     {
       "name": "charizard",
       "id": 6,
-      "caught": false
+      "caught": false,
+      "date": 1621240030098
     },
     {
       "name": "squirtle",
       "id": 7,
-      "caught": false
+      "caught": true,
+      "date": 1621240283090
     },
     {
       "name": "wartortle",
@@ -50,7 +55,8 @@
     {
       "name": "caterpie",
       "id": 10,
-      "caught": false
+      "caught": false,
+      "date": 1621240286698
     },
     {
       "name": "metapod",
@@ -145,7 +151,8 @@
     {
       "name": "nidoran-f",
       "id": 29,
-      "caught": false
+      "caught": false,
+      "date": 1621240097205
     },
     {
       "name": "nidorina",

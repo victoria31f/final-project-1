@@ -2,8 +2,9 @@
 
 ## Запуск:
 
-1. `npm run server` (или `json-server --watch db.json --port 3001` с нужным портом)
-2. `npm run start`
+1. `npm install`
+2. `npm run server` (или `json-server --watch db.json --port 3001` с нужным портом)
+3. `npm run start`
 
 ### Использовались:
 * react

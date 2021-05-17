@@ -59,6 +59,10 @@ export const pokemonsListSlice = createSlice({
         if (pokemon.caught) {
           state.pokemonsCaught.push(pokemon);
         }
+        if (!pokemon.caught) {
+          const pokemonCaughtIdx = state.pokemonsCaught.findIndex((el) => el.id === id);
+          state.pokemonsCaught.splice(pokemonCaughtIdx, 1);
+        }
       }
     },
     [fetchCaughtPokemons.fulfilled]: (state, action) => {

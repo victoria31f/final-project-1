@@ -6,7 +6,7 @@ import Spinner from '../Spinner';
 
 const PokemonListView = ({
   status, pokemonsList, pokemonsListError,
-  loadMoreHandler, pokemonsStatus,
+  loadMoreHandler, pokemonsStatus, path,
 }) => {
   const spinner = (
     <div className="spinner-border spinner-inline" role="status">
@@ -24,6 +24,7 @@ const PokemonListView = ({
             caught={caught || false}
             id={id}
             key={id}
+            path={path}
           />
         );
       })}
